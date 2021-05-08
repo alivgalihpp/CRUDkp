@@ -19,6 +19,7 @@
     @foreach($negara as $n)
     <form action="/negara/update" method="post">
     {{ csrf_field() }}
+        <input type="hidden" name="id" value="{{ $n->id }}">
         <div class="form-group row">
             <label for="staticEmail" class="col-sm-2 col-form-label">Kode</label>
             <div class="col-sm-10">
