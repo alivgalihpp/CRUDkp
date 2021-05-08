@@ -70,7 +70,7 @@ class NegaraController extends Controller
         // menghapus data negara dari id tertentu
         DB::table('negara')->where('id',$id)->delete();
             
-        // alihkan halaman ke halaman pegawai
+        // alihkan halaman ke halaman negara
         return redirect('/negara');
     }
 }
